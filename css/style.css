@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* <--header--> */
+.header{
+    width:100%;
+    background-color: rgb(2, 11, 87) ;
+}
+
+.container{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container .navegacion > a{
+    color:white;
+    text-decoration: none;
+    padding-left: 2.5em;
+    font-family: 'Tahoma';
+
+}
+
+.logo img{
+
+    border-radius: 50%;
+}
+
+.navegacion a:hover{
+    color: rgb(46, 141, 250);
+}
+/* <-- cierre de mi header -->*/
+/*<-- hero--> */
+
+/* Sección hero */
+.hero {
+    background-image: url(../Img/fondo.avif); /* Cambia esto si necesitas otro fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Efecto de capa oscura */
+.capa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(60, 11, 238, 0);
+}
+
+/* Contenedor principal */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Asegura que esté encima de la capa */
+}
+
+/* Imagen de perfil */
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+/* Texto de presentación */
+.presentacion {
+
+    color: #fafdff;
+    text-align: justify;
+    max-width: 600px;
+    margin: 20px; /* Agrega espacio alrededor del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+
+.presentacion h1 {
+    font-family: Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.presentacion p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(44, 43, 43);
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+}
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Sección de tecnologías */
+.tecnologias {
+    padding: 20px;
+    background-color: white;
+}
+
+.tecnologias h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin: 5px 0;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #34495e;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    margin: 10px;
+    text-align: justify;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color:rgb(14, 2, 83); 
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color:black;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-image {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.footer {
+    background-color:rgb(58, 58, 58); /* Color oscuro para el fondo */
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Formulario de contacto */
+.footer-form {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-form h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-form form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.footer-form form input,
+.footer-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+.footer-form form button {
+    background-color: #1a1919;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-form form button:hover {
+    background-color: #774c24;
+}
+
+/* Enlaces rápidos */
+.footer-links,
+.footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+    color: #774c24;
+}
+
+
+
+.footer-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
