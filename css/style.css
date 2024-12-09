@@ -12,7 +12,6 @@
 
 .container{
     width:90%;
-    margin:0 auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -35,134 +34,167 @@
 .navegacion a:hover{
     color: rgb(46, 141, 250);
 }
-/* <-- cierre de mi header -->*/
-/*<-- hero--> */
 
-/* Sección hero */
-.hero {
-    background-image: url(../Img/fondo.avif); /* Cambia esto si necesitas otro fondo */
+
+.hero{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 70vh;
+}
+.padre{
     position: relative;
 }
 
-/* Efecto de capa oscura */
-.capa {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(60, 11, 238, 0);
-}
+
+
+
 
 /* Contenedor principal */
 .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    width: 100%;
-    position: relative;
-    z-index: 1; /* Asegura que esté encima de la capa */
+    display: flex; /* Activa Flexbox */
+  flex-direction: row; /* Pone los elementos en fila */
+  align-items: center; /* Centra verticalmente */
+  gap: 140px; /* Espacio entre texto e imagen */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto 80px; /* Centrado horizontal */
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-/* Imagen de perfil */
-.profile-pic {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 5px solid #fff;
+/* Texto */
+.text-content {
+  flex: 1; /* Ocupa el espacio disponible */
 }
 
-/* Texto de presentación */
+/* Imagen */
+.image-content img {
+  max-width: 300px; /* Tamaño máximo de la imagen */
+  height: auto; /* Mantén las proporciones */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+/* Forzar el contenedor siguiente a mantener espacio */
+.section {
+    clear: both; /* Asegura que no haya solapamientos */
+    padding-top: 40px; /* Espacio superior entre secciones */
+  }
+/* Contenedor principal para centrar todo */
+.page-container {
+    
+    justify-content: flex-start;
+    min-height: 70vh; /* Altura mínima de toda la ventana */
+    min-width: 5vh;
+    background-color: #f5f5f5; /* Opcional: fondo claro */
+    text-align: center;
+    padding: 20px;
+    margin: 0%;
+}
+
+/* Estilo del texto */
 .presentacion {
-
-    color: #fafdff;
-    text-align: justify;
-    max-width: 600px;
-    margin: 20px; /* Agrega espacio alrededor del texto */
-    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: center; /* Alinear el texto al centro */
+    color: #000; /* Color del texto */
+    max-width: 600px; /* Limitar el ancho máximo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo del texto */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave opcional */
 }
+.card {
+    display: flex; /* Flexbox para organizar texto e imagen en línea */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+    padding: 20px;
+    max-width: 800px; /* Ancho máximo */
+    gap: 20px; /* Espaciado entre texto e imagen */
+}
+
 
 
 .presentacion h1 {
-    font-family: Tahoma, sans-serif;
+    font-family: serif;
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #34495e;
+    text-align: center;
 }
 
 .presentacion p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+    color: #000000;
+    text-align: justify;
 }
 
 .btn {
     display: inline-block;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(1, 6, 53);
     color: aliceblue;
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: 0.3s;
+    text-align: center;
+    
 }
 
 .btn:hover {
-    background-color: #4CAF50;
+    background-color: #bcb9da;
 }
-
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.presentacion {
     text-align: center;
-    background-color: #f9f9f9;
+
+    color: #d5e0e7;
+    text-align: justify;
+    max-width: 600px;
+    margin: 0px; /* Agrega espacio alrededor del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: initial;
+}
+.centrado {
+    text-align: center;
 }
 
 /* Sección de tecnologías */
 .tecnologias {
     padding: 20px;
     background-color: white;
+    text-align: center;
 }
 
 .tecnologias h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
+
+
 
 h2 {
     color: #2c3e50;
     margin-bottom: 10px;
+    font-family: serif;
+    text-align: center;
 }
 
 /* Listas */
 ul, ol {
     margin: 10px 0;
     padding-left: 20px;
+    text-align: center;
 }
 
 ul li, ol li {
     margin: 5px 0;
+    text-align: center;
 }
 
 /* Tabla */
@@ -328,5 +360,6 @@ tbody tr:nth-child(even) {
     height: auto;
     border-radius: 10px;
 }
+
 
 
